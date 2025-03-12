@@ -38,3 +38,11 @@ body {
   width: 80%;
   padding: 0.595em;
 }
+
+.icon__add {
+  background-color: #0068ff;
+  padding: 0.5em;
+  color: #fff;
+  cursor: pointer;
+  width: 20%;
+}
