@@ -46,3 +46,9 @@ body {
   cursor: pointer;
   width: 20%;
 }
+
+.div__element {
+  background-color: #0068ff;
+  padding: 0.6em;
+  width: 85%;
+}
