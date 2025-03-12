@@ -9,7 +9,7 @@ function AddData(e) {
 
   //CREATION D'UN ELEMENT DIV
   const divElement = document.createElement("div");
-  //divElement.classList.add("div__element");
+  divElement.classList.add("div__element");
   divViewData.appendChild(divElement);
 
   //CREATION D'UN ELEMENT LI
