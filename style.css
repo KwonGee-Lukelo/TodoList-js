@@ -48,7 +48,16 @@ body {
 }
 
 .div__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #0068ff;
   padding: 0.6em;
+  margin: 0.8em 0;
   width: 85%;
+}
+
+.li__element {
+  list-style: none;
+  color: #fff;
 }
