@@ -61,3 +61,19 @@ body {
   list-style: none;
   color: #fff;
 }
+
+.delete:hover,
+.completed:hover {
+  cursor: pointer;
+}
+
+.div__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.completed__text {
+  text-decoration: line-through;
+  color: rgb(138, 136, 136);
+}
