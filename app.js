@@ -5,6 +5,7 @@ const divViewData = document.querySelector("#listData");
 addBtn.addEventListener("click", AddData);
 divViewData.addEventListener("click", checkingIconClick);
 
+//Fonction AJOUTER
 function AddData(e) {
   e.preventDefault();
 
@@ -61,6 +62,7 @@ function checkingIconClick(e) {
   }
 }
 
+//function SUPPRIMER
 function deleteData(e) {
   const divParent = e.target.parentElement; // Puis on cible l'élément parent, son parent direct
   const divRemove = divParent.parentElement; // ici à partir du parent direct, nous ciblons le parent du parent direct
@@ -68,9 +70,23 @@ function deleteData(e) {
   divRemove.remove(); // On supprime l'élément Parent du parent direct
 }
 
+//function COMPLETER
 function completeData(e) {
   const divParent = e.target.parentElement; // Puis on cible l'élément parent, son parent direct
   const liElement = divParent.previousElementSibling; // ici à partir du parent direct, nous ciblons l'élément li précédent
 
   liElement.classList.toggle("completed__text"); // Ajoute ou supprime la classe pour marquer comme complété
 }
+
+const divCountData = document.createElement("div");
+const liCountData = document.createElement("li");
+const liCountData2 = document.createElement("li");
+liCountData.classList.add("li__element");
+liCountData2.classList.add("li__element");
+
+liCountData.innerText = "Tâches ajoutées :";
+liCountData2.innerText = "Tâches finis :";
+
+divCountData.appendChild(liCountData);
+divCountData.appendChild(liCountData2);
+divViewData.insertAdjacentElement("afterend", divCountData);
