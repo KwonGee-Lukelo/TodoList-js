@@ -31,6 +31,14 @@ function AddData(e) {
     deleteBtn.style.padding = "0.5em";
     divElement.appendChild(deleteBtn);
 
+    //AJOUT DE l'ICON COMPLETER DANS LA DIV ELEMENT
+    const completeBtn = document.createElement("i");
+    completeBtn.classList.add("ri-check-double-fill");
+    completeBtn.style.color = "white";
+    completeBtn.style.backgroundColor = "#009aff";
+    completeBtn.style.padding = "0.5em";
+    divElement.appendChild(completeBtn);
+
     // AJOUT DE L'ÉVÉNEMENT DE SUPPRESSION
     /*deleteBtn.addEventListener("click", () => {
       divElement.remove();
